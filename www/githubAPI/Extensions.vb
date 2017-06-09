@@ -51,16 +51,16 @@ Public Module Extensions
 
     <Extension>
     Private Function __subExcludes(list$(), users As User()) As IEnumerable(Of User)
-        Dim indexOf As New IndexOf(Of String)(list)
+        'Dim indexOf As New IndexOf(Of String)(list)
         Dim out As New List(Of User)
 
-        For Each u As User In users
-            Dim uid$ = DirectCast(u, INamedValue).Key
+        'For Each u As User In users
+        '    Dim uid$ = DirectCast(u, INamedValue).Key
 
-            If indexOf(uid) = -1 Then
-                out += u
-            End If
-        Next
+        '    If indexOf(uid) = -1 Then
+        '        out += u
+        '    End If
+        'Next
 
         Return out
     End Function
