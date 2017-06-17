@@ -37,7 +37,7 @@ Imports Microsoft.VisualBasic.Text
 ''' Wrapper for the file operations.
 ''' </summary>
 ''' <remarks></remarks>
-<[Namespace]("Large_Text_File")>
+<NamespaceRenamed("Large_Text_File")>
 Public Module LargeTextFile
 
     <Extension>

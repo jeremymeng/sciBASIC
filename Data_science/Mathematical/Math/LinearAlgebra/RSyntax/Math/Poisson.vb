@@ -79,7 +79,7 @@ Namespace SyntaxAPI.MathExtension
     ''' Density, distribution function, quantile function and random generation for the normal distribution with mean equal to mean and standard deviation equal to sd.
     ''' </summary>
     ''' <remarks></remarks>
-    <[Namespace]("RBase.Math.Normal", Description:="Density, distribution function, quantile function and random generation for the normal distribution with mean equal to mean and standard deviation equal to sd.")>
+    <NamespaceRenamed("RBase.Math.Normal", Description:="Density, distribution function, quantile function and random generation for the normal distribution with mean equal to mean and standard deviation equal to sd.")>
     Public Module Normal
 
         ''' <summary>

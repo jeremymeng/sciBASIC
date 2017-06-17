@@ -38,7 +38,7 @@ Namespace Scripting.MetaData
     ''' This attribute provides a more details information about a namepace package module in your scripting plugins.
     ''' </summary>
     <XmlType("PackageNamespace", [Namespace]:="Microsoft.VisualBasic.Architecture.Framework_v3.0_22.0.76.201__8da45dcd8060cc9a")>
-    Public Class PackageNamespace : Inherits [Namespace]
+    Public Class PackageNamespace : Inherits NamespaceRenamed
 
         ''' <summary>
         ''' This plugins project's home page url.
@@ -62,7 +62,7 @@ Namespace Scripting.MetaData
         ''' This attribute provides a more details information about a namepace package module in your scripting plugins.
         ''' </summary>
         ''' <param name="ns"></param>
-        Public Sub New(ns As [Namespace])
+        Public Sub New(ns As NamespaceRenamed)
             Me.Namespace = ns.Namespace
             Me.Description = ns.Description
         End Sub

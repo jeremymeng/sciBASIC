@@ -33,7 +33,7 @@ Imports Microsoft.VisualBasic.Scripting.MetaData
 
 Namespace SoftwareToolkits
 
-    <[Namespace]("Software.Toolkits")>
+    <NamespaceRenamed("Software.Toolkits")>
     Module ToolkitAPI
 
         <ExportAPI("Release.Notes.Editor.Open")>

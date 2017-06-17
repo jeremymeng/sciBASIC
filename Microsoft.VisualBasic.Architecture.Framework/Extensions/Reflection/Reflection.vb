@@ -593,23 +593,23 @@ EXIT_:      If DebuggerMessage Then Call $"[WARN] Target type ""{Type.FullName}"
     End Function
 
     ''' <summary>
-    ''' Get the scripting namespace value from <see cref="[Namespace]"/>
+    ''' Get the scripting namespace value from <see cref="NamespaceRenamed"/>
     ''' </summary>
     ''' <param name="__nsType"></param>
     ''' <returns></returns>
     '''
     <ExportAPI("Get.APINamespace")>
-    <Extension> Public Function NamespaceEntry(__nsType As Type) As [Namespace]
+    <Extension> Public Function NamespaceEntry(__nsType As Type) As NamespaceRenamed
         Dim attr As Object() = Nothing
         Try
-            attr = __nsType.GetCustomAttributes(GetType([Namespace]), True)
+            attr = __nsType.GetCustomAttributes(GetType(NamespaceRenamed), True)
         Catch ex As Exception
             Call App.LogException(New Exception(__nsType.FullName, ex))
         End Try
         If attr.IsNullOrEmpty Then
-            Return New [Namespace](__nsType.Name, __nsType.FullName, True)
+            Return New NamespaceRenamed(__nsType.Name, __nsType.FullName, True)
         Else
-            Return DirectCast(attr(Scan0), [Namespace])
+            Return DirectCast(attr(Scan0), NamespaceRenamed)
         End If
     End Function
 

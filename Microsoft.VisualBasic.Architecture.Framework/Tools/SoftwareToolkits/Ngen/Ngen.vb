@@ -114,7 +114,7 @@ Namespace SoftwareToolkits
     ''' 当然, 如果只有一个程序集不是NGen'd或者如果一个程序集的NGen文件不能被使用, JIT编译器就会被载入, 应用程序的工作集将会增加.
     ''' </remarks>
     <RunInstaller(True)>
-<[Namespace]("Ngen")>
+<NamespaceRenamed("Ngen")>
     Public Module NgenInstaller
 
 #Region "Actions::The following table shows the syntax Of Each action."

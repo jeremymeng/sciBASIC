@@ -54,7 +54,7 @@ Namespace CommandLine
     ''' </summary>
     ''' <remarks></remarks>
     '''
-    <[Namespace]("Interpreter")> Public Class Interpreter
+    <NamespaceRenamed("Interpreter")> Public Class Interpreter
 
         Implements IDisposable
         Implements IDictionary(Of String, APIEntryPoint)
@@ -354,7 +354,7 @@ Namespace CommandLine
         End Property
 
         Public ReadOnly Property Stack As String
-        Public ReadOnly Property Info As [Namespace]
+        Public ReadOnly Property Info As NamespaceRenamed
 
         ''' <summary>
         '''

@@ -51,7 +51,7 @@ Namespace MMFProtocol
     ''' MMFProtocol socket object for the inter-process communication on the localhost, this can be using for the data exchange between two process.
     ''' </summary>
     ''' <remarks></remarks>
-    <[Namespace]("MMFSocket", Description:="MMFProtocol socket object for the inter-process communication on the localhost, this can be using for the data exchange between two process.")>
+    <NamespaceRenamed("MMFSocket", Description:="MMFProtocol socket object for the inter-process communication on the localhost, this can be using for the data exchange between two process.")>
     Public Class MMFSocket : Implements IDisposable
 
         Dim _MMFReader As MSIOReader, _MMFWriter As MSWriter

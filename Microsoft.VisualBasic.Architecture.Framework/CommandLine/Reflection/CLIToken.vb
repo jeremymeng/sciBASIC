@@ -33,7 +33,7 @@ Imports Microsoft.VisualBasic.Language
 
 Namespace CommandLine.Reflection
 
-    Public Class RunDllEntryPoint : Inherits [Namespace]
+    Public Class RunDllEntryPoint : Inherits NamespaceRenamed
 
         ''' <summary>
         ''' rundll namespace::api

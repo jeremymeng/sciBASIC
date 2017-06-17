@@ -39,7 +39,7 @@ Namespace CommandLine.Reflection
     ''' </summary>
     ''' <remarks></remarks>
     <AttributeUsage(AttributeTargets.Class, AllowMultiple:=False, Inherited:=True)>
-    Public Class [Namespace] : Inherits Attribute
+    Public Class NamespaceRenamed : Inherits Attribute
         Implements INamedValue
 
         ''' <summary>
@@ -93,7 +93,7 @@ Namespace CommandLine.Reflection
         ''' Constant of type information for the reflection
         ''' </summary>
         ''' <returns></returns>
-        Public Shared ReadOnly Property TypeInfo As System.Type = GetType([Namespace])
+        Public Shared ReadOnly Property TypeInfo As System.Type = GetType(NamespaceRenamed)
 
         Public Overrides Function ToString() As String
             If String.IsNullOrEmpty(Description) Then
